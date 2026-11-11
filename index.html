@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز سرمدا للكمبيوتر | الوكيل الرسمي لمنتجات R8 العالمية في سوريا</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=W4tPPWFBYxgXRr9XBawHf-YsaDUTfAzRQ5sSXq6SO1M4TbkaYwgTEKuiYvchJlKyltH8D5IGzqlLqRu_-klZbbi9NB0K8sQAHqXOhdENXXbqQ1BJq0OBXCIvWnn4XYW9lUkxznOWTWLV3DyWMLfFxeUwrekD5LE0PHrOBo7RrVszEUgHrEhyH7NRg5kAD6gaQC-2KII67MFks13EHLJexqkcuB_ce4wUt5csSwzwZ5rJsSkO4b0x0dkmvH0HpPz3jtwKSjikkbNqjMa5V-uPSokTX4XvIEFxIuCa7EsD8RC3XHv2GbVsPALxbQoizzjF" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jb250cmlidXRpb24udXNlcmNvbnRlbnQuZ29vZ2xlLmNvbS9kb3dubG9hZD9jPUNneGlZWEprWDNOMGIzSmhaMlVTVUJJTmNtVnpjRzl1YzJWZlpHRjBZUm9fQ2pCbFpqUXhOVGMyWkRkbFl6VTBPR0kwTURBd05qVm1aV1UwTnpJelpUUTBOakExWm1VME0yWTVORFF5WXpVell6TVNDeElIRUotbGl2ZWRBUmdCJmZpbGVuYW1lPWluZGV4Lmh0bWwmb3BpPTEwMzEzNTA1MA"/><style>
+        :root {
+            --primary: #e60012;
+            --primary-dark: #b8000e;
+            --dark: #0f172a;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --accent: #ffb703;
+            --green: #25d366;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            direction: rtl;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-bar-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 700;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-badge {
+            background: #111;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 20px;
+            letter-spacing: 1px;
+            border: 2px solid var(--primary);
+        }
+
+        .logo-text h1 {
+            font-size: 18px;
+            font-weight: 900;
+            color: #0f172a;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-size: 11px;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .search-bar {
+            flex: 1;
+            max-width: 550px;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 11px 45px 11px 16px;
+            border-radius: 25px;
+            border: 1px solid #cbd5e1;
+            outline: none;
+            font-size: 14px;
+            transition: 0.3s;
+            background: #f8fafc;
+        }
+
+        .search-bar input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(230,0,18,0.12);
+            background: white;
+        }
+
+        .search-bar i {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+        }
+
+        .user-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-portal {
+            background: #0f172a;
+            color: white;
+            padding: 9px 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-portal:hover {
+            background: #1e293b;
+        }
+
+        /* Policy & Agency Banner */
+        .policy-strip {
+            background: #090c10;
+            color: white;
+            padding: 14px 20px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .policy-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+
+        .policy-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255,255,255,0.04);
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .policy-card i {
+            font-size: 22px;
+            color: var(--primary);
+        }
+
+        .policy-card h4 {
+            font-size: 13px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 2px;
+        }
+
+        .policy-card p {
+            font-size: 11px;
+            color: #94a3b8;
+            line-height: 1.3;
+        }
+
+        /* Wholesale Active Alert */
+        .wholesale-active-alert {
+            display: none;
+            background: #fef08a;
+            color: #854d0e;
+            padding: 10px 20px;
+            text-align: center;
+            font-weight: 800;
+            font-size: 13px;
+            border-bottom: 2px solid #eab308;
+        }
+
+        /* Category Filter Tabs Bar */
+        .category-nav-bar {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 10px 20px;
+            position: sticky;
+            top: 73px;
+            z-index: 90;
+        }
+
+        .category-nav-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 4px;
+            scrollbar-width: thin;
+        }
+
+        .category-nav-inner::-webkit-scrollbar {
+            height: 4px;
+        }
+        .category-nav-inner::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        .tab-btn {
+            white-space: nowrap;
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 12px;
+            color: #475569;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tab-btn:hover {
+            background: #fee2e2;
+            color: var(--primary);
+            border-color: #fca5a5;
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .tab-btn .badge-count {
+            background: rgba(0,0,0,0.12);
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .tab-btn.active .badge-count {
+            background: rgba(255,255,255,0.25);
+            color: white;
+        }
+
+        /* Main Container */
+        .main-container {
+            max-width: 1400px;
+            margin: 24px auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .section-header h2 {
+            font-size: 20px;
+            font-weight: 900;
+            color: #0f172a;
+            position: relative;
+            padding-right: 14px;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s, box-shadow 0.25s;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08);
+            border-color: #cbd5e1;
+        }
+
+        .card-header-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #0f172a;
+            color: white;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 6px;
+            z-index: 2;
+        }
+
+        .card-category-tag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: #fee2e2;
+            color: var(--primary);
+            font-size: 10px;
+            font-weight: 800;
+            padding: 2px 7px;
+            border-radius: 4px;
+            z-index: 2;
+        }
+
+        .card-img-placeholder {
+            width: 100%;
+            height: 180px;
+            background: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #f1f5f9;
+            color: #94a3b8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .card-img-placeholder i {
+            font-size: 48px;
+            color: #cbd5e1;
+            margin-bottom: 8px;
+            transition: 0.3s;
+        }
+
+        .product-card:hover .card-img-placeholder i {
+            color: var(--primary);
+            transform: scale(1.1);
+        }
+
+        .card-body {
+            padding: 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 15px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .card-specs {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 14px;
+            line-height: 1.5;
+            flex: 1;
+            background: #f8fafc;
+            padding: 8px 10px;
+            border-radius: 6px;
+            border: 1px solid #f1f5f9;
+        }
+
+        /* Retail Price Box */
+        .retail-price-box {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border: 1px solid #e2e8f0;
+        }
+
+        .retail-label {
+            font-size: 12px;
+            color: #64748b;
+            font-weight: 700;
+        }
+
+        .retail-val {
+            font-size: 18px;
+            font-weight: 900;
+            color: var(--primary);
+        }
+
+        /* Wholesale Tiers Box */
+        .wholesale-tiers-box {
+            display: none;
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 12px;
+        }
+
+        .wt-title {
+            font-size: 11px;
+            font-weight: 800;
+            color: #92400e;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .wt-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            text-align: center;
+        }
+
+        .wt-item {
+            background: white;
+            padding: 4px;
+            border-radius: 4px;
+            border: 1px solid #fef3c7;
+        }
+
+        .wt-qty {
+            font-size: 10px;
+            color: #78350f;
+            display: block;
+        }
+
+        .wt-price {
+            font-size: 12px;
+            font-weight: 800;
+            color: #b45309;
+        }
+
+        .btn-order-wa {
+            width: 100%;
+            background: #25d366;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: 0.25s;
+            text-decoration: none;
+        }
+
+        .btn-order-wa:hover {
+            background: #1eb954;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.65);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: white;
+            width: 100%;
+            max-width: 480px;
+            border-radius: 16px;
+            padding: 24px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .close-modal {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            font-size: 20px;
+            color: #94a3b8;
+            cursor: pointer;
+        }
+
+        .modal-title {
+            font-size: 18px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #475569;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 800;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* Order Calculator Modal */
+        .calc-box {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 14px;
+            margin: 16px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .calc-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .calc-total {
+            font-weight: 900;
+            font-size: 16px;
+            color: var(--primary);
+            border-top: 1px solid #e2e8f0;
+            padding-top: 8px;
+        }
+
+        /* Footer Directory */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 40px 20px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h3 {
+            color: white;
+            font-size: 16px;
+            font-weight: 800;
+            margin-bottom: 14px;
+            position: relative;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+        }
+
+        .footer-col p {
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .contact-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .contact-list li {
+            margin-bottom: 10px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255,255,255,0.03);
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .contact-list a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 700;
+            direction: ltr;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #1e293b;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .search-bar {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Wholesale active banner -->
+    <div id="wholesaleBanner" class="wholesale-active-alert">
+        <i class="fa-solid fa-store"></i> مرحباً بك: <span id="shopNameDisplay">محل نور</span> | تم تفعيل أسعار الجملة الرسمية لكافة منتجات R8
+        <button onclick="logoutWholesale()" style="background:none; border:none; color:#b91c1c; font-weight:800; cursor:pointer; margin-right:15px; text-decoration:underline;">[تسجيل خروج التاجر]</button>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-right">
+            <span><i class="fa-solid fa-certificate"></i> الوكيل الحصري والموزع المعتمد لعلامة R8 في سوريا</span>
+            <span><i class="fa-solid fa-location-dot"></i> سرمدا - الشارع العام - جانب مول البدوي</span>
+        </div>
+        <div>
+            <a href="https://wa.me/963933100750" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> إدارة الطلبيات والجملة: 0933100750
+            </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-area">
+                <div class="logo-badge">R8</div>
+                <div class="logo-text">
+                    <h1>مركز سرمدا للكمبيوتر</h1>
+                    <span>SARMADA COMPUTER CENTER • SELECT R8</span>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="ابحث عن موديل (مثال: 1610, G201, كيبورد, ماوس, تبريد, سماعة)..." onkeyup="filterProducts()">
+            </div>
+
+            <div class="user-actions">
+                <button class="btn-portal" onclick="openWholesaleModal()" id="portalBtn">
+                    <i class="fa-solid fa-shop"></i> دخول أصحاب المحلات
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Policy Strip -->
+    <div class="policy-strip">
+        <div class="policy-inner">
+            <div class="policy-card">
+                <i class="fa-solid fa-rotate-left"></i>
+                <div>
+                    <h4>المرونة والارتجاع</h4>
+                    <p>استبدال الموديلات الراكدة خلال 30 يوم عمل</p>
+                </div>
+            </div>
+            <div class="policy-card">
+                <i class="fa-solid fa-layer-group"></i>
+                <div>
+                    <h4>الشرائح السعرية</h4>
+                    <p>انخفاض تلقائي للتكلفة مع زيادة حجم الطلبية</p>
+                </div>
+            </div>
+            <div class="policy-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <h4>الكفالة الفضية</h4>
+                    <p>ضمان استبدال حقيقي شامل لمدة شهر كامل</p>
+                </div>
+            </div>
+            <div class="policy-card">
+                <i class="fa-solid fa-percent"></i>
+                <div>
+                    <h4>مكافأة المسحوبات</h4>
+                    <p>خصم نقدي 5% للمشتريات المتجاوزة 3000$ شهرياً</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Tabs Navigation Bar -->
+    <div class="category-nav-bar">
+        <div class="category-nav-inner" id="categoryTabsContainer">
+            <!-- Dynamically populated -->
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <div class="section-header">
+            <h2 id="currentCategoryTitle">جميع أصناف R8 للتسليم الفوري</h2>
+            <span style="font-size: 13px; color: #64748b; font-weight: 700;" id="productCountDisplay">عرض 264 صنف</span>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- Dynamically populated -->
+        </div>
+    </main>
+
+    <!-- Modal: Wholesale Login -->
+    <div class="modal" id="wholesaleModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeWholesaleModal()">&times;</span>
+            <div class="modal-title">
+                <i class="fa-solid fa-shop" style="color:var(--primary)"></i> بوابة تجار الجملة وأصحاب المحلات
+            </div>
+            <p style="font-size: 13px; color: #64748b; margin-bottom: 16px;">
+                قم بتسجيل الدخول للاطلاع على شرائح أسعار الجملة الرسمية لكافة الأصناف (1-10، 11-50، 51-100+ قطعة).
+            </p>
+            <div class="form-group">
+                <label>اسم المحل أو التاجر</label>
+                <input type="text" id="loginShopName" placeholder="مثال: مركز النور للكمبيوتر" value="مركز النور">
+            </div>
+            <div class="form-group">
+                <label>رمز الدخول</label>
+                <input type="password" id="loginPassword" placeholder="كلمة المرور" value="123">
+            </div>
+            <button class="btn-submit" onclick="loginWholesale()">تفعيل أسعار الجملة</button>
+            <p style="font-size: 12px; color: #94a3b8; text-align: center; margin-top: 12px;">
+                (حساب تجريبي سريع: مركز النور | الرمز: 123)
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal: Order Calculator & WhatsApp -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeOrderModal()">&times;</span>
+            <div class="modal-title">
+                <i class="fa-brands fa-whatsapp" style="color:var(--green)"></i> طلب كمية عبر واتساب
+            </div>
+            <h4 id="calcItemTitle" style="color: #0f172a; margin-bottom: 8px;">اسم المنتج</h4>
+            
+            <div class="form-group">
+                <label>حدد الكمية المطلوبة بالقطعة:</label>
+                <input type="number" id="orderQtyInput" min="1" value="10" oninput="updateOrderCalculation()">
+            </div>
+
+            <div class="calc-box">
+                <div class="calc-row">
+                    <span>الشريحة المطبقة:</span>
+                    <strong id="calcTier">1 - 10 قطع</strong>
+                </div>
+                <div class="calc-row">
+                    <span>سعر القطعة:</span>
+                    <strong id="calcUnitPrice">$0.00</strong>
+                </div>
+                <div class="calc-row calc-total">
+                    <span>الإجمالي التقديري:</span>
+                    <strong id="calcTotalPrice">$0.00</strong>
+                </div>
+            </div>
+
+            <button class="btn-submit" style="background:var(--green)" onclick="sendWhatsAppOrder()">
+                <i class="fa-brands fa-whatsapp"></i> إرسال الطلبية إلى مركز سرمدا
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer Directory -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h3>مركز سرمدا للتجارة والاستيراد</h3>
+                <p>الوكيل الحصري لمنتجات R8 في سوريا. رواد توزيع ملحقات الحواسيب، تجهيزات القيمنج، وحلول الشبكات بأعلى معايير الضمان الحقيقي وخدمة ما بعد البيع.</p>
+                <p style="margin-top: 10px; color: white; font-weight: 700;">الموقع الرسمي: WWW.SARMADACENTER.COM</p>
+            </div>
+            <div class="footer-col">
+                <h3>فريق العمل وخدمة الموزعين</h3>
+                <ul class="contact-list">
+                    <li>
+                        <span>أحمد (AHMED) - الإدارة والطلبيات</span>
+                        <a href="https://wa.me/963933100750" target="_blank">+963 933 100 750</a>
+                    </li>
+                    <li>
+                        <span>محمود (MAHMOUD) - التوزيع والمبيعات</span>
+                        <a href="https://wa.me/963996534551" target="_blank">+963 996 534 551</a>
+                    </li>
+                    <li>
+                        <span>ياسر (YASER) - خدمة العملاء والشحن</span>
+                        <a href="https://wa.me/963943044454" target="_blank">+963 943 044 454</a>
+                    </li>
+                    <li>
+                        <span>حسن (HASAN) - التنسيق والمشتريات</span>
+                        <a href="https://wa.me/905315977991" target="_blank">+90 531 597 79 91</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>المقر الرئيسي والمعرض</h3>
+                <p>📍 سوريا - إدلب - سرمدا - الشارع العام (بجانب مول البدوي).<br>🕒 استقبال الزبائن يومياً من 9:00 صباحاً حتى 9:00 مساءً.<br>🚚 شحن وتوزيع فوري منتظم لكافة مدن ومحافظات سوريا.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            جميع الحقوق محفوظة © مركز سرمدا للكمبيوتر | Select R8 - Expect The Extraordinary • 2026
+        </div>
+    </footer>
+
+    <script>
+        const products = [{"id": "1609", "title": "R8 • 1609 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 2 Million Clicks • Buttons: 4D Gaming • Colors: Black / White / Pink / Blue • Size: 121 × 72 × 39 mm • Weight & Cable: 75g | 1.25m USB", "p1_str": "$1.35", "p2_str": "$1.25", "p3_str": "$1.15", "num_p1": 1.35, "num_p2": 1.25, "num_p3": 1.15, "retail": 1.82}, {"id": "1610", "title": "R8 • 1610 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 DPI Stable • Key Life: 1 Million Clicks • Buttons: 3D Office Design • Color: Matte Black • Size: 117 × 55 × 35 mm • Weight & Cable: 70g | 1.50m USB", "p1_str": "$1.10", "p2_str": "$1.05", "p3_str": "$1.00", "num_p1": 1.1, "num_p2": 1.05, "num_p3": 1.0, "retail": 1.49}, {"id": "1611", "title": "R8 • 1611 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 DPI Optical • Key Life: 1 Million Clicks • Buttons: 3D Classic • Color: Classic Black • Size: 117 × 55 × 35 mm • Weight & Cable: 70g | 1.50m USB", "p1_str": "$1.20", "p2_str": "$1.15", "p3_str": "$1.10", "num_p1": 1.2, "num_p2": 1.15, "num_p3": 1.1, "retail": 1.62}, {"id": "1615", "title": "R8 • 1615 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 6D Gaming • Colors: Black / Silver / • Size: 121 × 72 × 39 mm • Weight & Cable: 125g | 1.50m USB", "p1_str": "$2.45", "p2_str": "$2.30", "p3_str": "$2.15", "num_p1": 2.45, "num_p2": 2.3, "num_p3": 2.15, "retail": 3.31}, {"id": "1617", "title": "R8 • 1617 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 6D Office Design • Color: Black • Size: 124 × 68 × 40 mm • Weight & Cable: 130g | 1.50m USB", "p1_str": "$4.0", "p2_str": "$3.85", "p3_str": "$3.70", "num_p1": 4.0, "num_p2": 3.85, "num_p3": 3.7, "retail": 5.4}, {"id": "1618", "title": "R8 • 1618 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 7D Classic • Color: Black • Size: 75 × 120 × 40 mm • Weight & Cable: 135g | 1.50m USB", "p1_str": "$4.40", "p2_str": "$4.25", "p3_str": "$4.10", "num_p1": 4.4, "num_p2": 4.25, "num_p3": 4.1, "retail": 5.94}, {"id": "1620", "title": "R8 • 1620 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 7D Gaming • Colors: Black • Size: 122 × 77 × 43 mm • Weight & Cable: 155g | 1.50m USB", "p1_str": "$5.1", "p2_str": "$4.85", "p3_str": "$4.6", "num_p1": 5.1, "num_p2": 4.85, "num_p3": 4.6, "retail": 6.88}, {"id": "1627", "title": "R8 • 1627 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 6D Office Design • Color: Black • Size: 124 × 68 × 40 mm • Weight & Cable: 130g | 1.50m USB", "p1_str": "$3.5", "p2_str": "$3.35", "p3_str": "$3.3", "num_p1": 3.5, "num_p2": 3.35, "num_p3": 3.3, "retail": 4.73}, {"id": "G3", "title": "R8 • G3 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 6D Classic • Color: Black • Size: 124 × 62 × 44 mm • Weight & Cable: 130g | 1.50m USB", "p1_str": "$4.8", "p2_str": "$4.6", "p3_str": "$4.25", "num_p1": 4.8, "num_p2": 4.6, "num_p3": 4.25, "retail": 6.48}, {"id": "1633", "title": "R8 • 1633 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 6D Gaming • Colors: Black • Size: 125 × 65 × 43 mm • Weight & Cable: 110g | 1.50m USB", "p1_str": "$3.65", "p2_str": "$3.50", "p3_str": "$3.40", "num_p1": 3.65, "num_p2": 3.5, "num_p3": 3.4, "retail": 4.93}, {"id": "1634", "title": "R8 • 1634 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 7D Office Design • Color: Black • Size: 124 × 68 × 40 mm • Weight & Cable: 130g | 1.50m USB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1635", "title": "R8 • 1635 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 – 3600 – 4800 – 8200  DPI • Key Life: 10 Million Clicks • Buttons: 6D Classic • Color: Black • Size: 124 × 62 × 44 mm • Weight & Cable: 110g | 1.50m USB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1636", "title": "R8 • 1636 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 6D Gaming • Colors: Black • Size: 125 × 65 × 38 mm • Weight & Cable: 110g | 1.50m USB", "p1_str": "$2.75", "p2_str": "$2.65", "p3_str": "$2.55", "num_p1": 2.75, "num_p2": 2.65, "num_p3": 2.55, "retail": 3.71}, {"id": "1637", "title": "R8 • 1637 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 7D Office Design • Color: Black • Size: 125 × 68 × 33 mm • Weight & Cable: 110g | 1.50m USB", "p1_str": "$2.75", "p2_str": "$2.65", "p3_str": "$2.55", "num_p1": 2.75, "num_p2": 2.65, "num_p3": 2.55, "retail": 3.71}, {"id": "1638", "title": "R8 • 1638 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 – 3600 DPI • Key Life: 10 Million Clicks • Buttons: 7D Classic • Color: Black • Size: 128 × 91 × 40 mm • Weight & Cable: 130g | 1.50m USB", "p1_str": "$2.9", "p2_str": "$2.8", "p3_str": "$2.65", "num_p1": 2.9, "num_p2": 2.8, "num_p3": 2.65, "retail": 3.92}, {"id": "1639", "title": "R8 • 1639 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 7D Gaming • Colors: Black • Size: 123 × 83 × 43 mm • Weight & Cable: 130g | 1.50m USB", "p1_str": "$4.35", "p2_str": "$4.20", "p3_str": "$4.0", "num_p1": 4.35, "num_p2": 4.2, "num_p3": 4.0, "retail": 5.87}, {"id": "G1", "title": "R8 • G1 - Connection : USB", "category": "WIRED_MOUSE", "cat_name": "ماوس سلكي", "specs": "• Resolution: 1200 - 3600 DPI • Key Life: 10 Million Clicks • Buttons: 7D Office Design • Color: Black • Size: 127 × 67 × 39 mm • Weight & Cable: 110g | 1.50m USB", "p1_str": "$2.75", "p2_str": "$2.65", "p3_str": "$2.50", "num_p1": 2.75, "num_p2": 2.65, "num_p3": 2.5, "retail": 3.71}, {"id": "G201", "title": "R8 • G201 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 7D Gaming • Colors: Black / white • Size: 118 × 62 × 40 mm • Weight & Cable: 103g | 1.50m USB", "p1_str": "$4.25", "p2_str": "$4.10", "p3_str": "$4.0", "num_p1": 4.25, "num_p2": 4.1, "num_p3": 4.0, "retail": 5.74}, {"id": "G202", "title": "R8 • G202 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 7D Office Design • Color: Black / white • Size: 122 × 65 × 38 mm • Weight & Cable: 105g | 1.50m USB", "p1_str": "$4.75", "p2_str": "$4.60", "p3_str": "$4.45", "num_p1": 4.75, "num_p2": 4.6, "num_p3": 4.45, "retail": 6.41}, {"id": "G203", "title": "R8 • G203 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 7D Classic • Color: Black / white • Size: 126 × 70 × 40 mm • Weight & Cable: 105g | 1.50m USB", "p1_str": "$4.75", "p2_str": "$4.60", "p3_str": "$4.40", "num_p1": 4.75, "num_p2": 4.6, "num_p3": 4.4, "retail": 6.41}, {"id": "G204", "title": "R8 • G204 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 6D Gaming • Colors: Black / white • Size: 127 × 67 × 39 mm • Weight & Cable: 98g | 1.50m USB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G205", "title": "R8 • G205 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 6D Office Design • Color: Black / white • Size: 118 × 62 × 40 mm • Weight & Cable: 78g | 1.50m USB", "p1_str": "$4.65", "p2_str": "$4.50", "p3_str": "$4.35", "num_p1": 4.65, "num_p2": 4.5, "num_p3": 4.35, "retail": 6.28}, {"id": "G206", "title": "R8 • G206 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 6D Classic • Color: Black / white • Size: 126 × 65 × 39 mm • Weight & Cable: 110g | 1.50m USB", "p1_str": "$4.85", "p2_str": "$4.65", "p3_str": "$4.45", "num_p1": 4.85, "num_p2": 4.65, "num_p3": 4.45, "retail": 6.55}, {"id": "G207", "title": "R8 • G207 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 6D Gaming • Colors: Black / white • Size: 120 × 68 × 35 mm • Weight & Cable: 110g | 1.50m USB", "p1_str": "$5.0", "p2_str": "$4.85", "p3_str": "$4.6", "num_p1": 5.0, "num_p2": 4.85, "num_p3": 4.6, "retail": 6.75}, {"id": "G208", "title": "R8 • G208 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 8D Office Design • Color: Black / white • Size: 126 × 70 × 40 mm • Weight & Cable: 105g | 1.50m USB", "p1_str": "$5.50", "p2_str": "$5.30", "p3_str": "$5.0", "num_p1": 5.5, "num_p2": 5.3, "num_p3": 5.0, "retail": 7.43}, {"id": "G209", "title": "R8 • G209 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 7D Classic • Color: Black / white • Size: 127 × 72 × 44 mm • Weight & Cable: 105g | 1.50m USB", "p1_str": "$5.05", "p2_str": "$4.85", "p3_str": "$4.65", "num_p1": 5.05, "num_p2": 4.85, "num_p3": 4.65, "retail": 6.82}, {"id": "G210", "title": "R8 • G210 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 7D Gaming • Colors: Black / white • Size: 126 × 68 × 43 mm • Weight & Cable: 100g | 1.50m USB", "p1_str": "$5.45", "p2_str": "$5.25", "p3_str": "$5.10", "num_p1": 5.45, "num_p2": 5.25, "num_p3": 5.1, "retail": 7.36}, {"id": "G211", "title": "R8 • G211 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 6D Office Design • Color: Black / • Size: 126 × 68 × 43 mm • Weight & Cable: 105g | 1.50m USB", "p1_str": "$4.95", "p2_str": "$4.85", "p3_str": "$4.75", "num_p1": 4.95, "num_p2": 4.85, "num_p3": 4.75, "retail": 6.68}, {"id": "G212", "title": "R8 • G212 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 DPI • Key Life: 10 Million Clicks • Buttons: 6D Classic • Color: Black / • Size: 126 × 68 × 44 mm • Weight & Cable: 110g | 1.50m USB", "p1_str": "$4.5", "p2_str": "$4.35", "p3_str": "$4.2", "num_p1": 4.5, "num_p2": 4.35, "num_p3": 4.2, "retail": 6.08}, {"id": "G213", "title": "R8 • G213 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 – 7200 - 12800 DPI • Key Life: 50 Million Clicks • Buttons: 7D Gaming • Colors: Black / white • Size: 126 × 68 × 43 mm • Weight & Cable: 100g | 1.50m USB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G214", "title": "R8 • G214 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 - DPI • Key Life: 50 Million Clicks • Buttons: 6D Office Design • Color: Black / • Size: 126 × 68 × 43 mm • Weight & Cable: 105g | 1.50m USB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G215", "title": "R8 • G215 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 - DPI • Key Life: 50 Million Clicks • Buttons: 8D Office Design • Lighting Effect : 6 RGB lighting modes • Color: Black / white • Size: 125 × 64 × 40 mm • Weight & Cable: 102g | 1.50m USB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G216", "title": "R8 • G216 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 - 12800 DPI • Key Life: 50 Million Clicks • Buttons: 11D Office Design • Lighting Effect : 13+1 RGB lighting modes • Color: Black / white / Yellow • Size: 126 × 70 × 41 mm • Weight & Cable: 102g | 1.50m USB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G218", "title": "R8 • G218 - Connection : USB", "category": "RGB_MOUSE", "cat_name": "ماوس سلكي RGB", "specs": "• Resolution: 1200 – 3600 - 7200 - DPI • Key Life: 50 Million Clicks • Buttons: 8D Office Design • Lighting Effect : 6 RGB lighting modes • Color: Black / white  • Size: 126 × 72 × 40 mm • Weight & Cable: 102g | 1.50m USB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1724", "title": "R8 • 1724 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 4D • Colors: Black / white  / Blue / Pink • Connection: 2.4gHZ • Battery & Distance : 1*AA – 10m", "p1_str": "$2.7", "p2_str": "$2.6", "p3_str": "$2.45", "num_p1": 2.7, "num_p2": 2.6, "num_p3": 2.45, "retail": 3.65}, {"id": "1731", "title": "R8 • 1731 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 – 1600 DPI • Key Life: 5 Million Clicks • Buttons: 3D • Color: Black / white  / Blue / Pink • Connection: 2.4gHZ • Battery & Distance : 2*AA – 10m", "p1_str": "$2.5", "p2_str": "$2.4", "p3_str": "$2.25", "num_p1": 2.5, "num_p2": 2.4, "num_p3": 2.25, "retail": 3.38}, {"id": "1732", "title": "R8 • 1732 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 – 1600 DPI • Key Life: 5 Million Clicks • Buttons: 6D • Color: Black / white  / Blue / Pink • Connection: 2.4gHZ • Battery & Distance : 1*AA – 10m", "p1_str": "$2.75", "p2_str": "$2.65", "p3_str": "$2.5", "num_p1": 2.75, "num_p2": 2.65, "num_p3": 2.5, "retail": 3.71}, {"id": "1735", "title": "R8 • 1735 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 4D • Colors: Black / white  / Blue / Pink • Connection: 2.4gHZ • Battery & Distance : 1*AA – 10m", "p1_str": "$2.80", "p2_str": "$2.65", "p3_str": "$2.50", "num_p1": 2.8, "num_p2": 2.65, "num_p3": 2.5, "retail": 3.78}, {"id": "1736", "title": "R8 • 1736 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 6D • Color: Black / white  / Blue / Pink • Connection: 2.4gHZ • Battery & Distance : 1*AA – 10m", "p1_str": "$2.50", "p2_str": "$2.35", "p3_str": "$2.15", "num_p1": 2.5, "num_p2": 2.35, "num_p3": 2.15, "retail": 3.38}, {"id": "1739", "title": "R8 • 1739 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 4D • Color: Black / white  / Blue / Pink • Connection: 2.4gHZ • Battery & Distance : 1*AA – 10m", "p1_str": "$3.60", "p2_str": "$3.40", "p3_str": "$3.20", "num_p1": 3.6, "num_p2": 3.4, "num_p3": 3.2, "retail": 4.86}, {"id": "1742", "title": "R8 • 1742 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 4D • Colors: Black / white  / Blue / Pink • Connection: 2.4gHZ • Battery & Distance : 1*AA – 10m", "p1_str": "$3.10", "p2_str": "$3.0", "p3_str": "$2.85", "num_p1": 3.1, "num_p2": 3.0, "num_p3": 2.85, "retail": 4.19}, {"id": "1743", "title": "R8 • 1743 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 4D • Color: Black / white  / Blue / Pink • Connection: 2.4gHZ • Battery & Distance : 1*AA – 10m", "p1_str": "$3.10", "p2_str": "$3.0", "p3_str": "$2.85", "num_p1": 3.1, "num_p2": 3.0, "num_p3": 2.85, "retail": 4.19}, {"id": "1744", "title": "R8 • 1744 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 4D • Color: Black / white  / Blue / Pink • Connection: 2.4gHZ • Battery & Distance : 1*AA – 10m", "p1_str": "$2.40", "p2_str": "$2.30", "p3_str": "$2.15", "num_p1": 2.4, "num_p2": 2.3, "num_p3": 2.15, "retail": 3.24}, {"id": "1741", "title": "R8 • 1741 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 4D • Colors: Black / white  / Blue / Pink • Connection: 2.4gHZ • Battery & Distance : 1*AA – 10m", "p1_str": "$2.60", "p2_str": "$2.45", "p3_str": "$2.35", "num_p1": 2.6, "num_p2": 2.45, "num_p3": 2.35, "retail": 3.51}, {"id": "1721", "title": "R8 • 1721 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 - 2400  DPI • Key Life: 5 Million Clicks • Buttons: 4D • Color: Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Battery & Distance : 1*AA – 10m", "p1_str": "$4.10", "p2_str": "$4.0", "p3_str": "$3.85", "num_p1": 4.1, "num_p2": 4.0, "num_p3": 3.85, "retail": 5.54}, {"id": "1722", "title": "R8 • 1722 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 4D • Color: Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Battery & Distance : 1*AA – 10m", "p1_str": "$4.10", "p2_str": "$3.90", "p3_str": "$3.80", "num_p1": 4.1, "num_p2": 3.9, "num_p3": 3.8, "retail": 5.54}, {"id": "G400", "title": "R8 • G400 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 7D • Colors: Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Battery & Distance : 2*AAA – 10m", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G401", "title": "R8 • G401 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 4D • Color: Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Battery & Distance : 1*AA – 10m", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "X1", "title": "R8 • X1 - Wireless", "category": "WIRELESS_MOUSE", "cat_name": "ماوس لاسلكي", "specs": "• Resolution: 800 - 1600 DPI • Key Life: 5 Million Clicks • Buttons: 6D • Color: Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Battery & Distance : 1*AAA – 10m", "p1_str": "$4.50", "p2_str": "$4.35", "p3_str": "$4.20", "num_p1": 4.5, "num_p2": 4.35, "num_p3": 4.2, "retail": 6.08}, {"id": "1760", "title": "R8 • 1760 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 - 1600 DPI • Key Life & Buttons : 5 Million Clicks / 4D • Colors : Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 10m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$3.30", "p2_str": "$3.15", "p3_str": "$3.0", "num_p1": 3.3, "num_p2": 3.15, "num_p3": 3.0, "retail": 4.46}, {"id": "1761", "title": "R8 • 1761 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 - 3200 DPI • Key Life & Buttons : 5 Million Clicks / 7D • Colors : Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 10m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1762", "title": "R8 • 1762 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 - 1600 DPI • Key Life & Buttons : 5 Million Clicks / 6D • Colors : Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 10m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$4.60", "p2_str": "$4.40", "p3_str": "$4.10", "num_p1": 4.6, "num_p2": 4.4, "num_p3": 4.1, "retail": 6.21}, {"id": "1763", "title": "R8 • 1763 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 - 3200 DPI • Key Life & Buttons : 5 Million Clicks / 6D • Colors : Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 10m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$4.90", "p2_str": "$4.70", "p3_str": "$4.45", "num_p1": 4.9, "num_p2": 4.7, "num_p3": 4.45, "retail": 6.62}, {"id": "1765", "title": "R8 • 1765 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 - 3200 DPI • Key Life & Buttons : 10 Million Clicks / 6D • Colors : Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 10m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$4.80", "p2_str": "$4.60", "p3_str": "$4.30", "num_p1": 4.8, "num_p2": 4.6, "num_p3": 4.3, "retail": 6.48}, {"id": "1716", "title": "R8 • 1716 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 - 1600 DPI • Key Life & Buttons : 10 Million Clicks / 6D • Colors : Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 10m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G501", "title": "R8 • G501 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 DPI • Key Life & Buttons : 10 Million Clicks / 5D • Colors : Black / white  / Blue / Pink • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 10m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1767", "title": "R8 • 1767 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 DPI • Key Life & Buttons : 10 Million Clicks / 7D • Colors : Black / white  / Blue  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 10m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$7.25", "p2_str": "$7.0", "p3_str": "$6.7", "num_p1": 7.25, "num_p2": 7.0, "num_p3": 6.7, "retail": 9.79}, {"id": "X2", "title": "R8 • X2 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 - 1600 DPI • Key Life & Buttons : 10 Million Clicks / 7D • Colors : Black / white   • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 10m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "X3", "title": "R8 • X3 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 DPI • Key Life & Buttons : 10 Million Clicks / 7D • Colors : Black  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 10m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$5.0", "p2_str": "$4.85", "p3_str": "$4.7", "num_p1": 5.0, "num_p2": 4.85, "num_p3": 4.7, "retail": 6.75}, {"id": "G300", "title": "R8 • G300 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 DPI • Key Life & Buttons : 3 Million Clicks / 7D • Colors : Black  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$4.6", "p2_str": "$4.4", "p3_str": "$4.25", "num_p1": 4.6, "num_p2": 4.4, "num_p3": 4.25, "retail": 6.21}, {"id": "G301", "title": "R8 • G301 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 - 1600 DPI • Key Life & Buttons : 3 Million Clicks / 6D • Colors : Black  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$4.45", "p2_str": "$4.25", "p3_str": "$4.0", "num_p1": 4.45, "num_p2": 4.25, "num_p3": 4.0, "retail": 6.01}, {"id": "G302", "title": "R8 • G302 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 - 6400 DPI • Key Life & Buttons : 20 Million Clicks / 7D • Colors : Black  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 400 mAh", "p1_str": "$5.9", "p2_str": "$5.7", "p3_str": "$5.5", "num_p1": 5.9, "num_p2": 5.7, "num_p3": 5.5, "retail": 7.97}, {"id": "G303", "title": "R8 • G303 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 - 6400 DPI • Key Life & Buttons : 20 Million Clicks / 7D • Colors : Black  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$6.3", "p2_str": "$6.2", "p3_str": "$6.0", "num_p1": 6.3, "num_p2": 6.2, "num_p3": 6.0, "retail": 8.51}, {"id": "G304", "title": "R8 • G304 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 - 6400 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$7.9", "p2_str": "$7.8", "p3_str": "$7.6", "num_p1": 7.9, "num_p2": 7.8, "num_p3": 7.6, "retail": 10.67}, {"id": "G305", "title": "R8 • G305 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 - 4800 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 400 mAh", "p1_str": "$7.3", "p2_str": "$7.2", "p3_str": "$7.0", "num_p1": 7.3, "num_p2": 7.2, "num_p3": 7.0, "retail": 9.86}, {"id": "G308", "title": "R8 • G308 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 - DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$6.3", "p2_str": "$6.2", "p3_str": "$6.0", "num_p1": 6.3, "num_p2": 6.2, "num_p3": 6.0, "retail": 8.51}, {"id": "G509", "title": "R8 • G509 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 - DPI • Key Life & Buttons : 20 Million Clicks / 4D • Colors : Black  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 300 mAh", "p1_str": "$7.9", "p2_str": "$7.8", "p3_str": "$7.6", "num_p1": 7.9, "num_p2": 7.8, "num_p3": 7.6, "retail": 10.67}, {"id": "G512", "title": "R8 • G512 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 - DPI • Key Life & Buttons : 20 Million Clicks / 4D • Colors : Black  • Connection: 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 300 mAh", "p1_str": "$7.3", "p2_str": "$7.2", "p3_str": "$7.0", "num_p1": 7.3, "num_p2": 7.2, "num_p3": 7.0, "retail": 9.86}, {"id": "G311", "title": "R8 • G311 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: Wired + 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 300 mAh", "p1_str": "$7.2", "p2_str": "$6.9", "p3_str": "$6.5", "num_p1": 7.2, "num_p2": 6.9, "num_p3": 6.5, "retail": 9.72}, {"id": "G312", "title": "R8 • G312 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: Wired + 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 400 mAh", "p1_str": "$10.25", "p2_str": "$9.65", "p3_str": "$9.25", "num_p1": 10.25, "num_p2": 9.65, "num_p3": 9.25, "retail": 13.84}, {"id": "G313", "title": "R8 • G313 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: Wired + 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C + STAND • Rechargeable Battery : 300 mAh", "p1_str": "$10.75", "p2_str": "$10.25", "p3_str": "$9.75", "num_p1": 10.75, "num_p2": 10.25, "num_p3": 9.75, "retail": 14.51}, {"id": "G314", "title": "R8 • G314 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: Wired + 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G315", "title": "R8 • G315 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: Wired + 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$8.10", "p2_str": "$7.80", "p3_str": "$7.40", "num_p1": 8.1, "num_p2": 7.8, "num_p3": 7.4, "retail": 10.94}, {"id": "G316", "title": "R8 • G316 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 7D • Colors : Black  • Connection: Wired + 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$11.90", "p2_str": "$1.50", "p3_str": "$11.0", "num_p1": 11.9, "num_p2": 1.5, "num_p3": 11.0, "retail": 16.07}, {"id": "G314", "title": "R8 • G314 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: Wired + 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G315", "title": "R8 • G315 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: Wired + 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$8.10", "p2_str": "$7.80", "p3_str": "$7.40", "num_p1": 8.1, "num_p2": 7.8, "num_p3": 7.4, "retail": 10.94}, {"id": "G316", "title": "R8 • G316 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 7D • Colors : Black  • Connection: Wired + 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$11.90", "p2_str": "$1.50", "p3_str": "$11.0", "num_p1": 11.9, "num_p2": 1.5, "num_p3": 11.0, "retail": 16.07}, {"id": "G318", "title": "R8 • G318 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Colors : Black  • Connection: Wired + 2.4gHZ + Bluetooth • Distance  & Interface : 15m / Type-C • Rechargeable Battery : 500 mAh", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G320", "title": "R8 • G320 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 7200 – 12800 - 24000 DPI • Key Life & Buttons : 20 Million Clicks / 6D • Sensor Model : 3311IC  • Connection: Wired + 2.4gHZ + Bluetooth • Left/Right Switches : Huanyu switches, rated for • Rechargeable Battery : 500 mAh • Design & Features : Forged texture finish, withdisplay", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "G322", "title": "R8 • G322 - Rechargeable Wireless", "category": "RECHARGEABLE_MOUSE", "cat_name": "ماوس لاسلكي شحن", "specs": "• Resolution: 800 – 1600 – 3200 – 6400 - 12800 DPI • Key Life & Buttons : 20 Million Clicks / 8D • Light : RGB Glow  • Connection: Wired + 2.4gHZ + Bluetooth • Features : Game Specific Design • Rechargeable Battery : 500 mAh • Distance  & Interface : 15m / Type-C", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1032", "title": "R8 • 1032 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 87 • Keycaps : with double injection moulding • Colors Switch : Blue Switch Mechanical tri-color • Connection: Wired  • Switch Life : 50 million times • Backlight : Adjustable backlighting", "p1_str": "$15.0", "p2_str": "$14.25", "p3_str": "$13.75", "num_p1": 15.0, "num_p2": 14.25, "num_p3": 13.75, "retail": 20.25}, {"id": "1035", "title": "R8 • 1035 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 104 • Keycaps : with double injection moulding • Colors Switch : Blue Switch Mechanical tri-color • Connection: Wired  • Switch Life : 50 million times • Backlight : Adjustable backlighting", "p1_str": "$16.75", "p2_str": "$16.0", "p3_str": "$15.25", "num_p1": 16.75, "num_p2": 16.0, "num_p3": 15.25, "retail": 22.61}, {"id": "1037", "title": "R8 • 1037 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 61 • Keycaps : with double injection moulding • Colors Switch : Blue Switch Mechanical tri-color • Connection: Wired  • Switch Life : 50 million times • Backlight : Adjustable backlighting", "p1_str": "$12.25", "p2_str": "$11.75", "p3_str": "$11.0", "num_p1": 12.25, "num_p2": 11.75, "num_p3": 11.0, "retail": 16.54}, {"id": "1038", "title": "R8 • 1038 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 68 • Keycaps : with double injection moulding • Colors Switch : Blue Switch Mechanical tri-color  • Connection: Wired  • Switch Life : 50 million times • Backlight : Adjustable backlighting", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1039", "title": "R8 • 1039 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 98 • Keycaps : with double injection moulding • Colors Switch : Blue Switch Mechanical tri-color  • Connection: Wired  • Switch Life : 50 million times • Backlight : Adjustable backlighting", "p1_str": "$18.25", "p2_str": "$17.75", "p3_str": "$17.0", "num_p1": 18.25, "num_p2": 17.75, "num_p3": 17.0, "retail": 24.64}, {"id": "K1000", "title": "R8 • K1000 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 104 • Keycaps : with double injection moulding • Colors Switch : Blue Switch Mechanical tri-color  • Connection: Wired  • Switch Life : 50 million times • Backlight : Adjustable backlighting", "p1_str": "$17.75", "p2_str": "$16.90", "p3_str": "$16.0", "num_p1": 17.75, "num_p2": 16.9, "num_p3": 16.0, "retail": 23.96}, {"id": "K1001", "title": "R8 • K1001 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 108 • Keycaps : with double injection moulding • Colors Switch : Blue Switch Mechanical tri-color  • Connection: Wired  • Switch Life : 50 million times • Backlight : adjust voice", "p1_str": "$18.0", "p2_str": "$17.25", "p3_str": "$16.50", "num_p1": 18.0, "num_p2": 17.25, "num_p3": 16.5, "retail": 24.3}, {"id": "K1002", "title": "R8 • K1002 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 67 • Keycaps : with double injection moulding • Colors Switch : Blue Switch Mechanical tri-color  • Connection: Wired  • Switch Life : 50 million times • Backlight : adjust voice", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GK101", "title": "R8 • GK101 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 61 • Keycaps : with double injection moulding • Colors Switch : RED Switch Mechanical tri-color  • Connection: USB  • Switch Life : 50 million times • Backlight : adjust voice", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GK102", "title": "R8 • GK102 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 67 • Keycaps : with double injection moulding • Colors Switch : RED Switch Mechanical tri-color  • Connection: Wired  • Switch Life : 50 million times • Backlight : adjust voice", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GK104", "title": "R8 • GK104 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 80 • Keycaps : with double injection moulding • Colors Switch : RED Switch Mechanical tri-color  • Connection: Wired  • Switch Life : 50 million times • Backlight : Adjustable backlighting", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GK105", "title": "R8 • GK105 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 87 • Keycaps : with double injection moulding • Colors Switch : RED Switch Mechanical tri-color  • Connection: USB  • Switch Life : 50 million times • Backlight : adjust voice", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GK107", "title": "R8 • GK107 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 104 • Keycaps : with double injection moulding • Colors Switch : RED Switch Mechanical tri-color  • Connection: Wired  • Switch Life : 50 million times • Backlight : adjust voice", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GK109", "title": "R8 • GK109 - Connection : USB", "category": "MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي سلكي", "specs": "• Keys : 108 • Keycaps : with double injection moulding • Colors Switch : RED Switch Mechanical tri-color  • Connection: Wired  • Switch Life : 50 million times • Backlight : Adjustable backlighting", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GK301", "title": "R8 • GK301 - Connection : 2.4G + BT + WIRID", "category": "WIRELESS_MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي لاسلكي", "specs": "• Keys : 61 • Keycaps : with double injection moulding • Colors Switch : RED Switch Mechanical tri-color  • Connection: 2.4 + BT + WIRED  • Switch Life : 50 million times • Backlight : adjust voice", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GK305", "title": "R8 • GK305 - Connection : 2.4G + BT + WIRID", "category": "WIRELESS_MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي لاسلكي", "specs": "• Keys : 104 • Keycaps : with double injection moulding • Colors Switch : BLUE Switch Mechanical tri-color  • Connection: 2.4 + BT + WIRED  • Switch Life : 50 million times • Backlight : adjust voice", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "----", "title": "R8 • ----", "category": "WIRELESS_MECH_KEYBOARD", "cat_name": "كيبورد ميكانيكي لاسلكي", "specs": "مواصفات قياسية معتمدة من وكالة R8 الرسمية", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1801", "title": "R8 • 1801 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1802", "title": "R8 • 1802 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1803", "title": "R8 • 1803 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1809", "title": "R8 • 1809 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1813", "title": "R8 • 1813 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 61  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1814", "title": "R8 • 1814 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 61  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT200", "title": "R8 • GT200 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT201", "title": "R8 • GT201 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT202", "title": "R8 • GT202 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT203", "title": "R8 • GT203 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT204", "title": "R8 • GT204 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT206", "title": "R8 • GT206 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT207", "title": "R8 • GT207 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Waterproof : Floating Keycaps  • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1810", "title": "R8 • 1810 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired • Material : ABS • Waterproof : Floating Keycaps  • Keys : 24  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1822", "title": "R8 • 1822 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired Wired illuminated backlight • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1823", "title": "R8 • 1823 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired Wired illuminated backlight • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1825", "title": "R8 • 1825 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired Wired illuminated backlight • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GW100", "title": "R8 • GW100 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired Wired illuminated backlight • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GW101", "title": "R8 • GW101 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired Wired illuminated backlight • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GW102", "title": "R8 • GW102 - Connection : USB", "category": "OFFICE_KEYBOARD", "cat_name": "كيبورد مكتبي سلكي", "specs": "• Type : Wired Wired illuminated backlight • Material : ABS • Laser : engraved characters • Keys : 104  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1901", "title": "R8 • 1901 - Connection : USB", "category": "WIRED_COMBO", "cat_name": "كومبو كيبورد وماوس سلكي", "specs": "• Type : Wired Mouse & Keyboards combo • Material : ABS • Compatible : with all device with USB • Keys : 104 & 3d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1902", "title": "R8 • 1902 - Connection : USB", "category": "WIRED_COMBO", "cat_name": "كومبو كيبورد وماوس سلكي", "specs": "• Type : Wired Mouse & Keyboards combo • Material : ABS • Compatible : with all device with USB • Keys : 104 & 3d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1903", "title": "R8 • 1903 - Connection : USB", "category": "WIRED_COMBO", "cat_name": "كومبو كيبورد وماوس سلكي", "specs": "• Type : Wired Mouse & Keyboards combo • Material : ABS • Compatible : with all device with USB • Keys : 104 & 3d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1904", "title": "R8 • 1904 - Connection : USB", "category": "WIRED_COMBO", "cat_name": "كومبو كيبورد وماوس سلكي", "specs": "• Type : Wired Mouse & Keyboards combo • Material : ABS • Compatible : with all device with USB  • Keys : 104 & 3d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1909", "title": "R8 • 1909 - Connection : USB", "category": "WIRED_COMBO", "cat_name": "كومبو كيبورد وماوس سلكي", "specs": "• Type : Wired Mouse & Keyboards combo • Material : ABS • Compatible : with all device with USB & RGB • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1910", "title": "R8 • 1910 - Connection : USB", "category": "WIRED_COMBO", "cat_name": "كومبو كيبورد وماوس سلكي", "specs": "• Type : Wired Mouse & Keyboards combo • Material : ABS • Compatible : with all device with USB & RGB • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GW1000", "title": "R8 • GW1000 - Connection : USB", "category": "WIRED_COMBO", "cat_name": "كومبو كيبورد وماوس سلكي", "specs": "• Type : Wired Mouse & Keyboards combo • Material : ABS • Compatible : light effectmodes RGB • Keys : 104 & 6d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GW1001", "title": "R8 • GW1001 - Connection : USB", "category": "WIRED_COMBO", "cat_name": "كومبو كيبورد وماوس سلكي", "specs": "• Type : Wired Mouse & Keyboards combo • Material : ABS • Compatible : light effectmodes RGB • Keys : 104 & 6d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GW1002", "title": "R8 • GW1002 - Connection : USB", "category": "WIRED_COMBO", "cat_name": "كومبو كيبورد وماوس سلكي", "specs": "• Type : Wired Mouse & Keyboards combo • Material : ABS • Compatible : light effectmodes RGB • Keys : 104 & 6d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GW1003", "title": "R8 • GW1003 - Connection : USB", "category": "WIRED_COMBO", "cat_name": "كومبو كيبورد وماوس سلكي", "specs": "• Type : Wired Mouse & Keyboards combo • Material : ABS • Compatible : light effectmodes RGB • Keys : 104 & 6d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GR301", "title": "R8 • GR301 - Connection : 2.4G + BT", "category": "MINI_KEYBOARD", "cat_name": "كيبورد ميني لاسلكي", "specs": "• Type : Wirelees • Material : ABS Plastic • Lithium Battery Capacity : 150mAh • Keys : 68 • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1912", "title": "R8 • 1912 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G Wireless Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AA  • Keys : 104 & 6d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1913", "title": "R8 • 1913 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G Wireless Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1915", "title": "R8 • 1915 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G Wireless Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1916", "title": "R8 • 1916 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G Wireless Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AAA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1921", "title": "R8 • 1921 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G Wireless Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1923", "title": "R8 • 1923 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G Wireless Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1925", "title": "R8 • 1925 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G Wireless Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AAA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1926", "title": "R8 • 1926 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : wireless Nano USB receiver  • Material : ABS • battery : keyboard 1AA  mouse 1AAA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1930", "title": "R8 • 1930 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G Wireless Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AAA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1932", "title": "R8 • 1932 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G + BT Keyboard and Mouse Combo • Material : ABS • battery : Keyboard battery capacity:280ma Recharg  • Keys : 78 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "1933", "title": "R8 • 1933 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G + BT Keyboard and Mouse Combo • Material : ABS • battery : Keyboard battery capacity:280ma Recharg  • Keys : 78 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT100", "title": "R8 • GT100 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G Wireless Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AAA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT101", "title": "R8 • GT101 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G Wireless Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AAA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT102", "title": "R8 • GT102 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G + BT Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AAA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GT103", "title": "R8 • GT103 - Connection : 2.4G", "category": "WIRELESS_COMBO", "cat_name": "كومبو كيبورد وماوس لاسلكي", "specs": "• Type : 2.4G + BT Keyboard and Mouse Combo • Material : ABS • battery : keyboard 1AA  mouse 1AAA  • Keys : 104 & 4d  • Language: Arabic / English Layout • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GMP001", "title": "R8 • GMP001 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 185*265*25mm • Weight : 230G • Material : Lycra fabric+silicone • Support the wrist : relieving fatigue on your arm", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GMP004", "title": "R8 • GMP004 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 185*265*25mm • Weight : 230G • Material : Lycra fabric+silicone • Support the wrist : relieving fatigue on your arm", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GMP005", "title": "R8 • GMP005 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 200*265*27mm • Weight : 230G • Material : Lycra fabric+silicone • Support the wrist : relieving fatigue on your arm", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GMP008", "title": "R8 • GMP008 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 327*327*25mm • Weight : 240G • Material : Lycra fabric+silicone • Support the wrist : relieving fatigue on your arm", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GMP009", "title": "R8 • GMP009 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 430*110*23mm • Weight : 330G • Material : Lycra fabric+silicone • Support the wrist : relieving fatigue on your arm", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "M-01", "title": "R8 • M-01 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 300*250*3mm • Weight : 110G • Material : SUPER SMOOTH • sealed color: RED", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "M-02", "title": "R8 • M-02 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 300*800*3mm • Weight : 330G • Material : SUPER SMOOTH • sealed color: RED", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "M-06", "title": "R8 • M-06 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 300*250*3mm • Weight : 90G • Material : SUPER SMOOTH • sealed color: PHOTO", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "M-04", "title": "R8 • M-04 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 250*200*3mm • Weight : 178G • Material : cloth+slowrebound+rubber • sealed color: BLACK + RED + BLUE", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "M-05", "title": "R8 • M-05 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 70*465*23mm • Weight : 280G • Material : cloth+rubber+sponge • sealed color: BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "M-07", "title": "R8 • M-07 - MOUSE BAD", "category": "MOUSEPAD", "cat_name": "ماوس باد", "specs": "• Product size : 150*210*2mm • Weight : 50G • Material : SUPER SMOOTH • sealed color: PHOTO", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-01", "title": "R8 • SP-01 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-02", "title": "R8 • SP-02 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-03", "title": "R8 • SP-03 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 20Hz-18KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-04", "title": "R8 • SP-04 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 5Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-05", "title": "R8 • SP-05 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 5Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-06", "title": "R8 • SP-06 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-07", "title": "R8 • SP-07 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-08", "title": "R8 • SP-08 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-09", "title": "R8 • SP-09 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx1(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-10", "title": "R8 • SP-10 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 10Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-11", "title": "R8 • SP-11 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 5Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-12", "title": "R8 • SP-12 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V • Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-13", "title": "R8 • SP-13 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V\u000b\u000b• Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-14", "title": "R8 • SP-14 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V\u000b\u000b• Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "SP-15", "title": "R8 • SP-15 - 2.0 MULTIMEDIA", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "• Type : USP 2.0 MULTIMEDIA WOODEN ACTIVE • Output Power : RMS 3Wx2(THD=10%) • Standard Impedance : 4 Ohms • Speaker Unit : 52mmx2, (full anti-magnetic), Ndfeb • Input Interface : :3.5mm stereo jack • Input Current: USB power : (5V) or DC5V\u000b\u000b• Frequency Response : 90Hz-20KHz", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "H01", "title": "R8 • H01", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "USB / AUX | • Speaker : ф50MM • Impedance : 32+15% • Frequency : 20Hz-20kHz • Rated power : 25mw MAX 40mw • Plug type : ф3.5mm*2+USB • MIC dimension : ф4*1.5mm • Sensitivity : 110db±3db", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "H02", "title": "R8 • H02", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "USB / AUX | • Speaker : ф50MM • Impedance : 32+15% • Frequency : 20Hz-20kHz • Rated power : 25mw MAX 40mw • Plug type : ф3.5mm*2+USB • MIC dimension : ф4*1.5mm • Sensitivity : 110db±3db", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "H03", "title": "R8 • H03", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "USB / AUX | • Speaker : ф50MM • Impedance : 32+15% • Frequency : 20Hz-20kHz • Rated power : 25mw MAX 45mw • Plug type : ф3.5mm*2+USB • MIC dimension : ф4*1.5mm • Sensitivity : 110db±3db", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "H04", "title": "R8 • H04", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "USB / AUX | • Speaker : ф50MM • Impedance : 32+15% • Frequency : 20Hz-20kHz • Rated power : 25mw MAX 40mw • Plug type : ф3.5mm*2+USB • MIC dimension : ф4*1.5mm • Sensitivity : 110db±3db", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "H05", "title": "R8 • H05", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "USB / AUX | • Speaker : ф50MM • Impedance : 32+15% • Frequency : 20Hz-20kHz • Rated power : 25mw MAX 40mw • Plug type : ф3.5mm*2+USB • MIC dimension : ф4*1.5mm • Sensitivity : 110db±3db", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "H06", "title": "R8 • H06", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "USB / AUX | • Speaker : ф50MM • Impedance : 32+15% • Frequency : 20Hz-20kHz • Rated power : 25mw MAX 40mw • Plug type : ф3.5mm*2+USB • MIC dimension : ф4*1.5mm • Sensitivity : 110db±3db", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "H07", "title": "R8 • H07", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "USB / AUX | • Speaker : ф50MM • Impedance : 32Ω±10% • Frequency : 20Hz-20kHz • Rated power : 25mw MAX 40mw • Plug type : ф3.5mm*2+USB • MIC dimension : ф4*1.5mm • Sensitivity : 112dB±3dB • Output Sound Pressure : 105dB±3dB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "H08", "title": "R8 • H08", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "USB / AUX | • Speaker : ф50MM • Impedance : 32Ω±10% • Frequency : 20Hz-20kHz • Rated power : 25mw MAX 40mw • Plug type : ф3.5mm*2+USB • MIC dimension : ф4*1.5mm • Sensitivity : 112dB±3dB • Output Sound Pressure : 105dB±3dB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "H09", "title": "R8 • H09", "category": "AUDIO", "cat_name": "سبيكرات وسماعات", "specs": "USB / AUX | • Speaker : ф50MM • Impedance : 32Ω±10% • Frequency : 20Hz-20kHz • Rated power : 25mw MAX 40mw • Plug type : ф3.5mm*2+USB • MIC dimension : ф4*1.5mm • Sensitivity : 112dB±3dB • Output Sound Pressure : 105dB±3dB", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HT01", "title": "R8 • HT01 - STAND", "category": "HEADSET_STAND", "cat_name": "ستاند سماعات قيمنج", "specs": "• Material : ABS • Luminous : 7 color light cycle • Colour : black and white • Dimension : 120*270mm • Battery : 3*AA(Not included) • MIC dimension : Power switch", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HT02", "title": "R8 • HT02 - STAND", "category": "HEADSET_STAND", "cat_name": "ستاند سماعات قيمنج", "specs": "• Material : ABS • Luminous : 7 color light cycle • Colour : black and white • Dimension : 120*270mm • Battery : 3*AA(Not included) • MIC dimension : Power switch", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HT03", "title": "R8 • HT03 - STAND", "category": "HEADSET_STAND", "cat_name": "ستاند سماعات قيمنج", "specs": "• Material : ABS • Luminous : 7 color light cycle • Colour : black and white • Dimension : 120*270mm • Battery : 3*AA(Not included) • MIC dimension : Power switch", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C02", "title": "R8 • C02 - Foldable Aluminum", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "• Material : Aluminium Alloy • Adjustable : 6 level degree height adjustable • Power: --- • Fan quantity : --- • Fan size : --- • Fan speed : ---", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C04", "title": "R8 • C04 - Foldable Aluminum", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "• Material : Aluminum alloy + Silicone + N52 strong • Color: : Gunmetal Gray • Power: --- • Fan quantity : --- • Fan size : --- • Fan speed : ---", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C100", "title": "R8 • C100", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Single Fan Laptop Cooling | • Voltage: 5V • Current: 0.4A MAX • Power: 5.0W • Fan quantity : 1PCS • Fan size : 140 × 140 × 15 mm • Fan speed : 750-1500 RPM", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C101", "title": "R8 • C101", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Single Fan Laptop Cooling | • Voltage: 5V • Current: 0.4A MAX • Power: 5.0W • Fan quantity : 1PCS • Fan size : 140 × 140 × 15 mm • Fan speed : 750-1500 RPM", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C102", "title": "R8 • C102", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Single Fan Laptop Cooling | • Voltage: 5V • Current: 0.4A MAX • Power: 5.0W • Fan quantity : 1PCS • Fan size : 140 × 140 × 15 mm • Fan speed : 750-1500 RPM", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C103", "title": "R8 • C103", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Dual USB Cooling | • Voltage: 5V • Current: 0.5A-0.85A • Power: 1.75±10%W • Fan quantity : 2PCS • Fan size : 140 × 140 × 15 mm*2 • Fan speed : 1500±10%RPM", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C104", "title": "R8 • C104", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Dual USB Cooling | • Voltage: 5V • Current: 0.5A-0.85A • Power: 3.5W • Fan quantity : 2PCS • Fan size : 100 × 100 × 15 mm*2 • Fan speed : 1400±10%RPM", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C105", "title": "R8 • C105", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Dual USB Cooling | • Voltage: 5V • Current: 0.22A-0.38A • Power: 1.75±10%W • Fan quantity : 2PCS • Fan size : 140 × 140 × 15 mm*2 • Fan speed : 700-1400RPM", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C106", "title": "R8 • C106", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Dual USB Cooling | • Voltage: 5V • Current: 0.6A±10% • Power: 3W • Fan quantity : 2PCS • Fan size : 125 × 125 × 15 mm*2 • Fan speed : 1000RPM±10%", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C200", "title": "R8 • C200", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Dual USB Cooling | • Voltage: 5V • Current: 0.4A MAX • Power: 5.0W • Fan quantity : 2PCS • Fan size : 125 × 115 × 15 mm*2 • Fan speed : 1000-1200RPM", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C201", "title": "R8 • C201", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "5-Fan Laptop Cooling Pad | • Voltage: 5V • Current: 0.32A±10% • Power: 8.75W • Fan quantity : 5PCS • Fan size : 80 × 80 × 10 mm*5 • Fan speed : 1000RPM", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C202", "title": "R8 • C202", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "6-Fan Laptop Cooling Pad | • Voltage: 5V • Current: 0.5A-0.85A±10% • Power: 4.25W • Fan quantity : 6PCS • Fan size : 60 × 60 × 15 mm*6 • Fan speed : 3400RPM±10%", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C203", "title": "R8 • C203", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "4-Fan Laptop Cooling Pad | • Voltage: 5V • Current: 0.5A-0.8±10% • Power: 4.0W • Fan quantity : 4PCS • Fan size : 125 × 115 × 15 mm*4 • Fan speed : 1100RPM±10%", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C204", "title": "R8 • C204", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "6-Fan Laptop Cooling Pad | • Voltage: 5V • Current: 0.55A-0.85A±10% • Power: 4.5W • Fan quantity : 6PCS • Fan size : 112 × 112 × 15 mm*6 • Fan speed : 1100RPM±10%", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C205", "title": "R8 • C205 - Foldable Aluminum", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "• Material : Aluminium Alloy • Compatible size : 11-17.3 inch laptops • Adjust the height : 14CM • Rotation angle : 360° • Fan size : ф8.5cm*2 • Fan speed : 1200RPM", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C206", "title": "R8 • C206 - Foldable Aluminum", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "• Material : Aluminium Alloy • Signboard Size : 225*220mm • Glass base size : 430*240mm • Weight : 2.8KG • Column dimensions : 370*77*40mm • Color : BLACK", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C207", "title": "R8 • C207", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Dual USB Cooling | • Voltage: 5V • Current: 340mA • Power: 4.6W • Fan quantity : 2PCS • Fan dimensions: 14CM *2 • Fan speed : 1200RPM±10%", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C208", "title": "R8 • C208", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Dual USB Cooling | • Voltage: 5V • Current: 340mA • Power: 4.6W • Fan quantity : 2PCS • Fan dimensions: 14CM *2 • Fan speed : 1200RPM±10%", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C209", "title": "R8 • C209", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "Dual USB Cooling | • Voltage: 5V • Current: 310mA • Power: 3.4W • Fan quantity : 2PCS • Fan dimensions: 14CM *2 • Fan speed : 1400RPM±10%", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C210", "title": "R8 • C210", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "5-Fan Laptop Cooling Pad | • Voltage: 5V • Current: 430mA / 139mA • Power: 4.9W • Fan quantity : 5PCS • Fan dimensions: 14CM *1 – 7CM *4 • Fan speed : 1200+2800RPM±10%", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C211", "title": "R8 • C211", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "4-Fan Laptop Cooling Pad | • Voltage: 5V • Current: 430mA • Power: 4.3W • Fan quantity : 2PCS • Fan dimensions: 14CM *2 • Fan speed : 1200RPM±10%", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "C212", "title": "R8 • C212", "category": "COOLING", "cat_name": "قواعد تبريد وستاندات لابتوب", "specs": "6-Fan Laptop Cooling Pad | • Voltage: 5V • Current: 430mA • Power: 3.4W • Fan quantity : 2PCS • Fan dimensions: 60 X 60 X 15mm • Fan speed : 2800-3200RPM±10%", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH-01", "title": "R8 • AH-01 - Type-C Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : TYPE-C & 4 Port USB • Application : 1 OTG function, available for both PC • Material : Aluminum Alloy • Function : mouse and keyboards and Hard and Printer • Color : Silver • Weight : 70G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH-02", "title": "R8 • AH-02 - USB Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : USB & 4 Port USB • Application : 1 OTG function, available for both PC • Material : Aluminum Alloy • Function : mouse and keyboards and Hard and Printer • Color : Silver • Weight : 21G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH-03", "title": "R8 • AH-03 - Type-C Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : TYPE-C & 3 Port USB & Type-C • Application : 1 OTG function, available for both PC • Material : Aluminum Alloy • Function : mouse and keyboards and Hard and Printer • Color : ce Gray • Weight : 21G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH-04", "title": "R8 • AH-04 - USB Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : TYPE-C - USB & 3 Port USB & TF / SD  • Application : 1 OTG function, available for both PC • Material : Aluminum Alloy • Function : Type-Cx1, forComputer • Color : Space Gray • Weight : 70G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH-05", "title": "R8 • AH-05 - USB Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : USB & 7 Port USB • Application : 1 OTG function, available for both PC • Material : ABS • Function : super speed 5 Gbps and Hard and Printer • Color : BLACK • Weight : 100G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH-06", "title": "R8 • AH-06 - Type-C Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : TYPE-C - USB & 4 Port USB & TF / SD AUX / Type-C  • Application : 1 OTG function, available for both PC • Material : Aluminum Alloy • Function : super speed 5 Gbps and Hard and Printer • Color : Space Gray • Weight : 75G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH-04", "title": "R8 • AH-04 - USB Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : TYPE-C - USB & 3 Port USB & TF / SD / Type-C *2 / LAN 100MB  • Application : Computer、Phone、TabletComputer • Material : Aluminum Alloy • Function : super speed 5 Gbps and Hard and Printer • Color : Space Gray • Weight : 80G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH-05", "title": "R8 • AH-05 - USB Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : USB & LAN 1GB • Application : Switch 10Mbps or 100Mbps network  • Material : ABS • Function : 10Mbps and 100Mbps N-way • Color : BLACK • Weight : 100G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH-06", "title": "R8 • AH-06 - Type-C Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : TYPE-C – LAN 1GB • Application : Switch 10Mbps or 100Mbps network  • Material : ABS • Function : 10Mbps and 100Mbps N-way • Color : Space Gray • Weight : 75G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH10", "title": "R8 • AH10 - USB Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : TYPE-C & 3 Port USB • Application : 1 OTG function, available for both PC • Material : ABS • Function : mouse and keyboards and Hard and Printer • Color : BLACK • Weight : 40G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH11", "title": "R8 • AH11 - USB Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : USB & LAN 100Mbps TO USB 3 Port • Application : Switch 10Mbps or 100Mbps network  • Material : ABS • Function : 10Mbps and 100Mbps N-way • Color : BLACK • Weight : 100G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "AH12", "title": "R8 • AH12 - Type-C Hub", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : TYPE-C - USB & 3 Port USB & TF / SD  • Application : 1 OTG function, available for both PC • Material : ABS • Function :, forComputer • Color : BLACK • Weight : 70G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-01", "title": "R8 • HD-01 - HDMI 1.5M", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• High Speed : Ethernet-supprt10/100mbps • Accord With  : : HDTV2.0 lfication • Cable Length : 1.5m • upportDonldy : True-HD-DTS • Color : BLACK • Weight : 50G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-02", "title": "R8 • HD-02 - HDMI 3M", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• High Speed : Ethernet-supprt10/100mbps • Accord With  : : HDTV2.0 lfication • Cable Length : 3m • upportDonldy : True-HD-DTS • Color : BLACK • Weight : 50G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-03", "title": "R8 • HD-03 - HDMI 5M", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• High Speed : Ethernet-supprt10/100mbps • Accord With  : : HDTV2.0 lfication • Cable Length : 5m • upportDonldy : True-HD-DTS • Color : BLACK • Weight : 50G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-04", "title": "R8 • HD-04 - HDMI 10M", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• High Speed : Ethernet-supprt10/100mbps • Accord With  : : HDTV2.0 lfication • Cable Length : 10m • upportDonldy : True-HD-DTS • Color : BLACK • Weight : 125G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-05", "title": "R8 • HD-05 - HDMI 15M", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• High Speed : Ethernet-supprt10/100mbps • Accord With  : : HDTV2.0 lfication • Cable Length : 15m • upportDonldy : True-HD-DTS • Color : BLACK • Weight : 150G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-06", "title": "R8 • HD-06 - HDMI 20M", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• High Speed : Ethernet-supprt10/100mbps • Accord With  : : HDTV2.0 lfication • Cable Length : 20m • upportDonldy : True-HD-DTS • Color : BLACK • Weight : 200G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-07", "title": "R8 • HD-07 - Cable Laptop", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Power Cord : For laptop • Voltage : : 250V • Cable Length : 1.5M • Color : BLACK • Weight : 50G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-08", "title": "R8 • HD-08 - Cable Desktop", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Power Cord : For Desktop • Voltage : : 250V • Cable Length : 1.5M • Color : BLACK • Weight : 50G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-09", "title": "R8 • HD-09 - • Interface type : HDTV TO VGA\n• Cable Length : 25Cm\n• Color : BLACK\n• Weight : 200G", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "HDTV TO VGA", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-10", "title": "R8 • HD-10 - Cable for Printer 1.5M", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : USB Cable for Printer • Connection type : USB A-Print B • Cable Length : 1.5m • Material : Copper • Color : BLUE • Weight : 40G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-10", "title": "R8 • HD-10 - Cable for Printer 3M", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Interface type : USB Cable for Printer • Connection type : USB A-Print B • Cable Length : 3m • Material : Copper • Color : BLUE • Weight : 60G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "HD-15", "title": "R8 • HD-15", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "USB TO SATA | • Compatibility : 2.5\" SATA I / SATA II HDD & SSD • Interface  : USB 2.0 (High-Speed • Power Supply: Dual USB Ports • Drive Speed : Supports up to 7200 RPM • Indicators : Dual LED Lights • Feature : Compact, Plug & Play", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "WA-001", "title": "R8 • WA-001", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "USB BT 5.3 | • Interface type : USB 3.0 TO BT Version 5.3 • 2.0perating System Windows : 7/8/10/11 • Receiving /sending range : 0-10m • Frequency range : 2.4GHz(2402-2480MHz • Color : BLACK • Weight : 70G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "WA-005", "title": "R8 • WA-005", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "USB BT 5.1 | • Interface type : USB 3.0 TO BT Version 5.1 • 2.0perating System Windows : 7/8/10/11 • Receiving /sending range : 0-10m • Frequency range : 2.4GHz(2402-2480MHz • Color : BLACK • Weight : 70G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "WA-007", "title": "R8 • WA-007", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "USB BT 5.0 | • Interface type : USB 3.0 TO BT Version 5.0 • 2.0perating System Windows : 7/8/10/11 • Receiving /sending range : 0-10m • Frequency range : 2.4GHz(2402-2480MHz • Color : BLACK • Weight : 70G", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "WA-003", "title": "R8 • WA-003", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "USB WIFI | • Wi-Fi Standard : 802.11ac Dual-Band (Next-Gen Wi-Fi) • Speed: Up to 150Mbps • Antenna: High-Gain External Antenna • Security: WEP, WPA/WPA2, TKIP, AES • Feature : Plug & Play (Windows 8 / 10 / 11 • OS Support : Windows, Mac OS & Linux", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "WA-006", "title": "R8 • WA-006", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "USB WIFI | • Wi-Fi Standard : IEEE 802.11ax (Wi-Fi 6) • Frequency: Dual-Band (2.4GHz / 5GHz) • Max Speed: Up to 300 Mbps • Antenna: External Dual High-Gain Antennas • Performance : Ultra-Fast, Stable & Low Latency • OS Support : Windows, Mac OS & Linux", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "----", "title": "R8 • ----", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "مواصفات قياسية معتمدة من وكالة R8 الرسمية", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GP01", "title": "R8 • GP01 - Joystick PS4", "category": "JOYSTICKS", "cat_name": "قبضات وتحكم ألعاب", "specs": "• Type : joystick PS4 • Connection : wired & bluetooth • Color : black, green, purple,light blue , orange • Battery : 1000mA • Compatible with : PS4,PC,mobile,8BitDo receiver • Feature : touch button, dual-motor vibration", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GP02", "title": "R8 • GP02 - Joystick PS3", "category": "JOYSTICKS", "cat_name": "قبضات وتحكم ألعاب", "specs": "• Type : joystick PS3 • Connection : bluetooth • Color : black • Battery : 350mA • Compatible with : PS3 • Feature : single-motor vibration, 6-axis gyroscope", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GP03", "title": "R8 • GP03 - Joystick PC", "category": "JOYSTICKS", "cat_name": "قبضات وتحكم ألعاب", "specs": "• Type : joystick PC • Connection : wired   • Color : black, white, blue, red • Cable length : 1.5m • Compatible with : PC • Feature : single-motor vibration", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GP04-1", "title": "R8 • GP04-1 - Joystick PC", "category": "JOYSTICKS", "cat_name": "قبضات وتحكم ألعاب", "specs": "• Type : joystick PC • Connection : wired • Color : black • Cable length : 1.8m • Compatible with : PC • Feature : single-motor vibration", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GP04-2", "title": "R8 • GP04-2 - Joystick PC", "category": "JOYSTICKS", "cat_name": "قبضات وتحكم ألعاب", "specs": "• Type : joystick PC • Connection : wired • Color : black • Cable length : 1.8m • Compatible with : PC • Feature : single-motor vibration", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GP05", "title": "R8 • GP05 - Joystick PC XBOX", "category": "JOYSTICKS", "cat_name": "قبضات وتحكم ألعاب", "specs": "• Type : joystick PC • Connection : 2.4G   • Color : black • Battery : 2*AAA • Keys : 17 keys  • Feature : no vibration", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GP05-2", "title": "R8 • GP05-2 - Joystick PC XBOX", "category": "JOYSTICKS", "cat_name": "قبضات وتحكم ألعاب", "specs": "• Type : Gaming Chair • Connection : 2.4G   • Color : black • Battery : 2*AAA • Keys : 17 keys  • Feature : no vibration", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GP06-1", "title": "R8 • GP06-1 - Joystick PC", "category": "JOYSTICKS", "cat_name": "قبضات وتحكم ألعاب", "specs": "• Type : joystick PC • Connection : wired • Color : Transparent • Cable length : 1.85 • Compatible with : PC • Feature : single-motor vibration", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GP06-2", "title": "R8 • GP06-2 - Joystick PC", "category": "JOYSTICKS", "cat_name": "قبضات وتحكم ألعاب", "specs": "• Type : joystick PC • Connection : wired • Color : Transparent • Cable length : 1.85 • Compatible with : PC • Feature : single-motor vibration", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "CD-02", "title": "R8 • CD-02 - Recharg Joystick", "category": "JOYSTICKS", "cat_name": "قبضات وتحكم ألعاب", "specs": "• Material : ABS durable plastic • Connection : USB power input (5V/1A)   • Color : black • Charging Slots : 2 controllers simultaneously • Charging Time : Approx. 2.5 hours • Feature : Fast charging dock for PS4 controllers", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "S100", "title": "R8 • S100 - • Resolution : Up to 4K (3840×2160) / 2K / 1080P\n• Field of View : 95° Wide Angle (Fixed Focus)\n• Lighting : Touch Control LED Ring / Fill Light\n• Microphone : Built-in Noise-Reducing MIC\n• Interface : USB 2.0 (Plug & Play, 1.5m Cable)\n• Compatibility : Windows, macOS, Linux & Meeting\n• Video Format : MJPG / YUY2\n• Resolution & FPS : 4K (3840×2160) @ 15fps  30Fps 2K", "category": "FURNITURE", "cat_name": "كراسي وطاولات قيمنج", "specs": "WEB CAMERA", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "S102", "title": "R8 • S102 - • Resolution : Up to 4K (3840×2160) / 2K / 1080P\n• Field of View : 95° Wide Angle (Fixed Focus)\n• Lighting : Touch Control LED Ring / Fill Light\n• Microphone : Built-in Noise-Reducing MIC\n• Interface : USB 2.0 (Plug & Play, 1.5m Cable)\n• Compatibility : Windows, macOS, Linux & Meeting\n• Video Format : MJPG / YUY2\n• Resolution & FPS : 4K (3840×2160) @ 15fps  30Fps 2K", "category": "FURNITURE", "cat_name": "كراسي وطاولات قيمنج", "specs": "WEB CAMERA", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "YT-1204", "title": "R8 • YT-1204 - Game Chair", "category": "FURNITURE", "cat_name": "كراسي وطاولات قيمنج", "specs": "• Type : Gaming Chair • Reclining : Up to 135°   • Color : Black and Orange • Armrest : Linkage Armrest • Gas Lift : Class-2 (100mm) • Includes : Headrest & Lumbar Pillow", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "YT-1205", "title": "R8 • YT-1205 - Game Chair", "category": "FURNITURE", "cat_name": "كراسي وطاولات قيمنج", "specs": "• Type : Gaming Chair • Reclining : Up to 135°   • Color : Black and Yellow • Armrest : Linkage Armrest • Gas Lift : Class-2 (100mm) • Includes : Headrest & Lumbar Pillow", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "YT-1206", "title": "R8 • YT-1206 - Game Chair", "category": "FURNITURE", "cat_name": "كراسي وطاولات قيمنج", "specs": "• Type : Gaming Chair • Reclining : Up to 135°   • Color : Silver • Armrest : Linkage Armrest • Gas Lift : Class-2 (100mm) • Includes : Headrest & Lumbar Pillow", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "DK-1003", "title": "R8 • DK-1003 - Gaming Desk", "category": "FURNITURE", "cat_name": "كراسي وطاولات قيمنج", "specs": "• Type : Gaming Desk • Gaming Desk : Carbon Fiber Texture • Frame : 1.2mm Carbon Steel • Lighting : Colorful Armored RGB Lights • Includes : Headphone Holder + Cup Holder • Size : 120×60cm", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "DK-1005", "title": "R8 • DK-1005 - Gaming Desk", "category": "FURNITURE", "cat_name": "كراسي وطاولات قيمنج", "specs": "• Type : Computer / Office Desk • Material : High-Quality MDF Wood • Frame : Heavy-Duty Steel Pipe • Colors : White / Black • Size : 120×60cm", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "DK-1006", "title": "R8 • DK-1006 - Gaming Desk", "category": "FURNITURE", "cat_name": "كراسي وطاولات قيمنج", "specs": "• Type : Heavy-Duty Computer Desk • Material : MDF Wood Desktop • Frame : Reinforced Steel (X-Design) • Colors : White / Black • Size : 140×60cm", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "DK-1006", "title": "R8 • DK-1006 - Gaming Desk", "category": "FURNITURE", "cat_name": "كراسي وطاولات قيمنج", "specs": "• Type : Automatic Electric Lifting Des • Height Range : 72 – 118 cm (Adjustable) • Max Load : 75 KG • Controller : LED Display + 3 Memory Presets • Motor : Ultra-Quiet (<50dB) • Size : 120×60cm x 15mm • Colors : Walnut", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "DK-1007", "title": "R8 • DK-1007 - Gaming Desk", "category": "FURNITURE", "cat_name": "كراسي وطاولات قيمنج", "specs": "• Type : Automatic Electric Lifting Des • Height Range : 72 – 118 cm (Adjustable) • Max Load : 75 KG • Controller : LED Display + 3 Memory Presets • Motor : Ultra-Quiet (<50dB) • Size : 140×60cm x 15mm • Colors : Black", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "UP-900W", "title": "R8 • UP-900W - UPS 1500 VA", "category": "UPS", "cat_name": "منظمات كهرباء UPS", "specs": "• Capacity : 1500VA / 900W • Waveform : Pure Sine Wave • Battery : 2 × 12V 9Ah • Display : Smart Digital LCD Screen • Voltage : 220VAC Input / Universal Sockets • Protection : Overload, Short Circuit & Voltage", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "UP-1200W", "title": "R8 • UP-1200W - UPS 2000VA", "category": "UPS", "cat_name": "منظمات كهرباء UPS", "specs": "• Capacity : 2000VA / 1200W • Waveform : Pure Sine Wave • Battery : 2 × 12V 9Ah • Display : Smart Digital LCD Screen • Voltage : 220VAC Input / Universal Sockets • Protection : Overload, Short Circuit & Voltage", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "B1", "title": "R8 • B1 - Laptop Backpack", "category": "BACKPACK", "cat_name": "حقائب لابتوب", "specs": "• Type : Modern laptop backpack for daily use, work, \u000b• Durable water-resistant material for better protection\u000b• Spacious main compartment with laptop sleeve\u000b• Approximate capacity: 20–25 liters\u000b• Multiple internal pockets for organization\u000b• External USB charging port (power bank required)\u000b• Built-in headphone cable outlet\u000b• Adjustable padded shoulder straps for comfort\u000b• Side pockets and front zip pocket for easy access", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "B1", "title": "R8 • B1 - Laptop Backpack", "category": "BACKPACK", "cat_name": "حقائب لابتوب", "specs": "• Type : Modern laptop backpack for daily use, work, \u000b• Durable water-resistant material for better protection\u000b• Spacious main compartment with laptop sleeve\u000b• Approximate capacity: 20–25 liters\u000b• Multiple internal pockets for organization\u000b• External USB charging port (power bank required)\u000b• Built-in headphone cable outlet\u000b• Adjustable padded shoulder straps for comfort\u000b• Side pockets and front zip pocket for easy access", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "B1", "title": "R8 • B1 - Laptop Backpack", "category": "BACKPACK", "cat_name": "حقائب لابتوب", "specs": "• Type : Modern laptop backpack for daily use, work, \u000b• Durable water-resistant material for better protection\u000b• Spacious main compartment with laptop sleeve\u000b• Approximate capacity: 20–25 liters\u000b• Multiple internal pockets for organization\u000b• External USB charging port (power bank required)\u000b• Built-in headphone cable outlet\u000b• Adjustable padded shoulder straps for comfort\u000b• Side pockets and front zip pocket for easy access", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "ES-01", "title": "R8 • ES-01 - Switching 100M", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Ports : 8 × 10/100M RJ45 (Auto MDI/MDIX) • Data Rate : 10/100 Mbps • Voltage Input : DC 5V – 20V (Wide Range) • Power Consumption : Max 1.5W • Chipset : IP178G • Dimensions : 159 × 71 × 30 mm", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "ES-02", "title": "R8 • ES-02 - Switching 1GB", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "• Ports : 8 × Gigabit RJ45 (10/100/1000M Auto) • Data Rate : 10/100/1000 Mbps • Voltage Input : DC 5V – 20V (Wide Range) • Power Consumption : Max 2.72W • Chipset : IP178G • Dimensions : 159 × 71 × 30 mm", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "WA-008", "title": "R8 • WA-008 - • Brand : Showmax Digital \n• Category : CAT5E (23AWG Supported)\n• Type : Pass-Through RJ45 (8P8C) \n• Contacts : Premium Gold-Plated (2-Prong)\n• Compatibility : Solid & Stranded Cables\n• Quantity : 100 Pcs / Pack", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "RJ-45 CAT 5E", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "CUO-01", "title": "R8 • CUO-01 - CAT 6 UTP OutDoor", "category": "NETWORKING", "cat_name": "هبات، كابلات ومعدات شبكة", "specs": "مواصفات قياسية معتمدة من وكالة R8 الرسمية", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "2025", "title": "طقم قيمنج متكامل 4 في 1 • R8 2025", "category": "GAMING_SET", "cat_name": "بكج قيمنج متكامل", "specs": "كيبورد قيمنج 104 مفاتيح USB | ماوس ألعاب 4D بدقة 800-1600 DPI | ماوس باد قماش محبوك 255*215mm | سماعة رأس محيطية 50mm مع مايك", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}, {"id": "GWK1000", "title": "طقم قيمنج احترافي كامل 5 في 1 • R8 GWK1000", "category": "GAMING_SET", "cat_name": "بكج قيمنج متكامل", "specs": "كيبورد مالتي ميديا 114 مفتاح | ماوس ألعاب 4D 1200 DPI | سماعة قيمنج 50mm | سبيكرات 2.0 مضيئة | ستاند سماعة RGB 7 ألوان", "p1_str": "$000", "p2_str": "$000", "p3_str": "$000", "num_p1": 0.0, "num_p2": 0.0, "num_p3": 0.0, "retail": 0.0}];
+
+        const categoriesMap = {
+            'ALL': 'كل الأصناف',
+            'WIRED_MOUSE': 'ماوس سلكي',
+            'RGB_MOUSE': 'ماوس سلكي RGB',
+            'WIRELESS_MOUSE': 'ماوس لاسلكي',
+            'RECHARGEABLE_MOUSE': 'ماوس لاسلكي شحن',
+            'MECH_KEYBOARD': 'كيبورد ميكانيكي سلكي',
+            'WIRELESS_MECH_KEYBOARD': 'كيبورد ميكانيكي لاسلكي',
+            'OFFICE_KEYBOARD': 'كيبورد مكتبي سلكي',
+            'WIRED_COMBO': 'كومبو كيبورد وماوس سلكي',
+            'WIRELESS_COMBO': 'كومبو كيبورد وماوس لاسلكي',
+            'MINI_KEYBOARD': 'كيبورد ميني لاسلكي',
+            'GAMING_SET': 'بكج قيمنج متكامل',
+            'MOUSEPAD': 'ماوس باد',
+            'AUDIO': 'سبيكرات وسماعات',
+            'HEADSET_STAND': 'ستاند سماعات قيمنج',
+            'COOLING': 'قواعد تبريد وستاندات لابتوب',
+            'NETWORKING': 'هبات، كابلات ومعدات شبكة',
+            'JOYSTICKS': 'قبضات وتحكم ألعاب',
+            'FURNITURE': 'كراسي وطاولات قيمنج',
+            'UPS': 'منظمات كهرباء UPS',
+            'BACKPACK': 'حقائب لابتوب'
+        };
+
+        let activeCategory = 'ALL';
+        let isWholesaleActive = false;
+        let selectedProductForOrder = null;
+
+        // Render Tabs
+        function renderCategoryTabs() {
+            const container = document.getElementById('categoryTabsContainer');
+            
+            // Calculate counts
+            const counts = {};
+            counts['ALL'] = products.length;
+            products.forEach(p => {
+                counts[p.category] = (counts[p.category] || 0) + 1;
+            });
+
+            let html = `<button class="tab-btn ${activeCategory === 'ALL' ? 'active' : ''}" onclick="selectCategory('ALL')">
+                <i class="fa-solid fa-layer-group"></i> كل الأصناف <span class="badge-count">${counts['ALL']}</span>
+            </button>`;
+
+            for (const [key, name] of Object.entries(categoriesMap)) {
+                if (key === 'ALL') continue;
+                const count = counts[key] || 0;
+                if (count > 0) {
+                    html += `<button class="tab-btn ${activeCategory === key ? 'active' : ''}" onclick="selectCategory('${key}')">
+                        ${name} <span class="badge-count">${count}</span>
+                    </button>`;
+                }
+            }
+
+            container.innerHTML = html;
+        }
+
+        // Render Products
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            const searchVal = document.getElementById('searchInput').value.trim().toLowerCase();
+
+            const filtered = products.filter(p => {
+                const matchCategory = (activeCategory === 'ALL' || p.category === activeCategory);
+                const matchSearch = p.id.toLowerCase().includes(searchVal) ||
+                                    p.title.toLowerCase().includes(searchVal) ||
+                                    p.specs.toLowerCase().includes(searchVal) ||
+                                    p.cat_name.toLowerCase().includes(searchVal);
+                return matchCategory && matchSearch;
+            });
+
+            document.getElementById('productCountDisplay').innerText = `عرض ${filtered.length} صنف`;
+
+            grid.innerHTML = filtered.map(p => {
+                let iconClass = 'fa-computer-mouse';
+                if (p.category.includes('KEYBOARD')) iconClass = 'fa-keyboard';
+                else if (p.category.includes('AUDIO')) iconClass = 'fa-headphones';
+                else if (p.category.includes('COOLING')) iconClass = 'fa-fan';
+                else if (p.category.includes('JOYSTICKS')) iconClass = 'fa-gamepad';
+                else if (p.category.includes('FURNITURE')) iconClass = 'fa-chair';
+                else if (p.category.includes('NETWORKING')) iconClass = 'fa-network-wired';
+                else if (p.category.includes('BACKPACK')) iconClass = 'fa-bag-shopping';
+                else if (p.category.includes('UPS')) iconClass = 'fa-bolt';
+
+                const hasPrice = p.num_p1 > 0;
+                const retailText = hasPrice ? `$${p.retail.toFixed(2)}` : 'اتصل للسعر';
+
+                return `
+                <div class="product-card">
+                    <span class="card-header-badge">R8 • ${p.id}</span>
+                    <span class="card-category-tag">${p.cat_name}</span>
+                    <div class="card-img-placeholder">
+                        <i class="fa-solid ${iconClass}"></i>
+                        <span style="font-size:12px; font-weight:800; color:#475569;">${p.title}</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">${p.title}</h3>
+                        <p class="card-specs">${p.specs}</p>
+
+                        <!-- Retail Price Box -->
+                        <div class="retail-price-box" style="display: ${isWholesaleActive ? 'none' : 'flex'}">
+                            <span class="retail-label">سعر المفرق:</span>
+                            <span class="retail-val">${retailText}</span>
+                        </div>
+
+                        <!-- Wholesale Tiers Box -->
+                        <div class="wholesale-tiers-box" style="display: ${isWholesaleActive ? 'block' : 'none'}">
+                            <div class="wt-title">
+                                <i class="fa-solid fa-tags"></i> أسعار الجملة لمركزك:
+                            </div>
+                            <div class="wt-grid">
+                                <div class="wt-item">
+                                    <span class="wt-qty">1-10 قطع</span>
+                                    <span class="wt-price">${p.p1_str}</span>
+                                </div>
+                                <div class="wt-item">
+                                    <span class="wt-qty">11-50 قطعة</span>
+                                    <span class="wt-price">${p.p2_str}</span>
+                                </div>
+                                <div class="wt-item">
+                                    <span class="wt-qty">51-100+</span>
+                                    <span class="wt-price">${p.p3_str}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-order-wa" onclick="openOrderModal('${p.id}')">
+                            <i class="fa-brands fa-whatsapp"></i> ${isWholesaleActive ? 'طلب كمية جملة للمحل' : 'طلب شراء عبر واتساب'}
+                        </button>
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        function selectCategory(catKey) {
+            activeCategory = catKey;
+            document.getElementById('currentCategoryTitle').innerText = categoriesMap[catKey] || 'الأصناف';
+            renderCategoryTabs();
+            renderProducts();
+        }
+
+        function filterProducts() {
+            renderProducts();
+        }
+
+        // Wholesale Portal Functions
+        function openWholesaleModal() {
+            document.getElementById('wholesaleModal').style.display = 'flex';
+        }
+
+        function closeWholesaleModal() {
+            document.getElementById('wholesaleModal').style.display = 'none';
+        }
+
+        function loginWholesale() {
+            const name = document.getElementById('loginShopName').value.trim();
+            if (!name) {
+                alert('يرجى إدخال اسم المحل');
+                return;
+            }
+            isWholesaleActive = true;
+            document.getElementById('shopNameDisplay').innerText = name;
+            document.getElementById('wholesaleBanner').style.display = 'block';
+            document.getElementById('portalBtn').innerHTML = '<i class="fa-solid fa-check"></i> حساب تاجر مفعّل';
+            document.getElementById('portalBtn').style.background = '#059669';
+            closeWholesaleModal();
+            renderProducts();
+        }
+
+        function logoutWholesale() {
+            isWholesaleActive = false;
+            document.getElementById('wholesaleBanner').style.display = 'none';
+            document.getElementById('portalBtn').innerHTML = '<i class="fa-solid fa-shop"></i> دخول أصحاب المحلات';
+            document.getElementById('portalBtn').style.background = '#0f172a';
+            renderProducts();
+        }
+
+        // Order Modal Functions
+        function openOrderModal(productId) {
+            selectedProductForOrder = products.find(p => p.id === productId);
+            if (!selectedProductForOrder) return;
+
+            document.getElementById('calcItemTitle').innerText = selectedProductForOrder.title;
+            document.getElementById('orderQtyInput').value = isWholesaleActive ? 10 : 1;
+            updateOrderCalculation();
+            document.getElementById('orderModal').style.display = 'flex';
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderModal').style.display = 'none';
+        }
+
+        function updateOrderCalculation() {
+            if (!selectedProductForOrder) return;
+            const qty = parseInt(document.getElementById('orderQtyInput').value) || 1;
+            let unitPrice = 0;
+            let tierName = '';
+
+            if (isWholesaleActive) {
+                if (qty <= 10) {
+                    unitPrice = selectedProductForOrder.num_p1;
+                    tierName = '1 - 10 قطع (شريحة الجملة الأولى)';
+                } else if (qty <= 50) {
+                    unitPrice = selectedProductForOrder.num_p2;
+                    tierName = '11 - 50 قطعة (شريحة التوفير)';
+                } else {
+                    unitPrice = selectedProductForOrder.num_p3;
+                    tierName = '51 - 100+ قطعة (أقصى خصم جملة)';
+                }
+            } else {
+                unitPrice = selectedProductForOrder.retail;
+                tierName = 'سعر مفرق رسمي';
+            }
+
+            const total = qty * unitPrice;
+            document.getElementById('calcTier').innerText = tierName;
+            document.getElementById('calcUnitPrice').innerText = unitPrice > 0 ? `$${unitPrice.toFixed(2)}` : 'اتصل بالسعر';
+            document.getElementById('calcTotalPrice').innerText = total > 0 ? `$${total.toFixed(2)}` : 'حسب الكمية';
+        }
+
+        function sendWhatsAppOrder() {
+            const qty = parseInt(document.getElementById('orderQtyInput').value) || 1;
+            const shopName = isWholesaleActive ? document.getElementById('shopNameDisplay').innerText : 'زبون مفرق';
+            const unitPrice = document.getElementById('calcUnitPrice').innerText;
+            const total = document.getElementById('calcTotalPrice').innerText;
+
+            const text = `السلام عليكم مركز سرمدا للتجارة والاستيراد 🌟
+أود تقديم طلبية لمنتجات R8:
+━━━━━━━━━━━━━━━━━
+📦 الصنف: ${selectedProductForOrder.title} (كود: ${selectedProductForOrder.id})
+📂 القسم: ${selectedProductForOrder.cat_name}
+🔢 الكمية: ${qty} قطعة
+💰 سعر القطعة التقديري: ${unitPrice}
+💵 الإجمالي التقديري: ${total}
+🏢 نوع الحساب: ${isWholesaleActive ? 'طلبية جملة للمحل (' + shopName + ')' : 'زبون مفرق مباشر'}
+📍 الموقع: سرمدا - إدلب
+━━━━━━━━━━━━━━━━━
+يرجى تأكيد توفر الكمية وتجهيز الفاتورة.`;
+
+            const encoded = encodeURIComponent(text);
+            window.open(`https://wa.me/963933100750?text=${encoded}`, '_blank');
+            closeOrderModal();
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        };
+
+        // Initialization
+        renderCategoryTabs();
+        renderProducts();
+    </script>
+</body>
+</html>
